@@ -22,9 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnProcessAll = New System.Windows.Forms.Button()
+        Me.SuspendLayout
+        '
+        'btnProcessAll
+        '
+        Me.btnProcessAll.Location = New System.Drawing.Point(80, 89)
+        Me.btnProcessAll.Name = "btnProcessAll"
+        Me.btnProcessAll.Size = New System.Drawing.Size(131, 38)
+        Me.btnProcessAll.TabIndex = 0
+        Me.btnProcessAll.Text = "Process"
+        Me.btnProcessAll.UseMnemonic = false
+        Me.btnProcessAll.UseVisualStyleBackColor = true
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8!, 16!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(282, 253)
+        Me.Controls.Add(Me.btnProcessAll)
+        Me.Name = "Form1"
         Me.Text = "Form1"
-    End Sub
+        Me.ResumeLayout(false)
 
+End Sub
+
+    Friend WithEvents btnProcessAll As Button
 End Class
